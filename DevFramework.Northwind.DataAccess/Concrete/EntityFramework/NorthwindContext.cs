@@ -9,19 +9,19 @@ using System.Threading.Tasks;
 
 namespace DevFramework.Northwind.DataAccess.Concrete.EntityFramework
 {
-    public class NorthwindContext:DbContext
+    public class NorthwindContext : DbContext
     {
 
         public NorthwindContext()
-        {   
-            
-            
-            
-            
-            Database.SetInitializer<NorthwindContext>(null); 
-        
-        
-        
+        {
+
+
+
+
+            Database.SetInitializer<NorthwindContext>(null);
+
+
+
         }
 
 
@@ -30,8 +30,8 @@ namespace DevFramework.Northwind.DataAccess.Concrete.EntityFramework
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            
-            
+
+
             modelBuilder.Configurations.Add(new Mapping.ProductMap());
 
 
@@ -39,4 +39,8 @@ namespace DevFramework.Northwind.DataAccess.Concrete.EntityFramework
 
 
         }
+
+
+
+    }
 }
