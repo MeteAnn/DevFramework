@@ -46,4 +46,5 @@ namespace DevFramework.Core.DataAccess.NHihabernate
 
 
         }
+    }
 }
