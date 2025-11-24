@@ -44,7 +44,7 @@ namespace DevFramework.DataAccess.Tests.EntityFrameworkTests
         public void Get_all_with_parameter_returns_filtered_products()
         {
 
-            NhProductDal productDal = new NhProductDal(new SqlServerHelper())
+            NhProductDal productDal = new NhProductDal(new SqlServerHelper());
             var result = productDal.GetList(p => p.ProductName.Contains("ab"));
 
 
@@ -54,6 +54,7 @@ namespace DevFramework.DataAccess.Tests.EntityFrameworkTests
 
 
         }
+
 
 
 
